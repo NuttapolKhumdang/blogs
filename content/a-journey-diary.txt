@@ -5,7 +5,7 @@ Filename: a-journey-diary
 Backdrop: media/backdrop/10001.webp
 Title: Hi! I'm Nuttapol Khumdang
 Descriptions: "สวัสดี! ยินดีที่ได้พบกันที่นี่, ไม่ว่าด้วยเหตุผลใด อาจหลงเข้ามาหรือเปล่านะ? แต่ก็มารู้จักกันหน่อยไหม —
-Tag: Diary
+Tag: Diary, Introduce a Journey
 Create Date: 2025-05-10
 
 //;

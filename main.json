@@ -4,7 +4,8 @@
         "descriptions": "สวัสดี! ยินดีที่ได้พบกันที่นี่, ไม่ว่าด้วยเหตุผลใด อาจหลงเข้ามาหรือเปล่านะ? แต่ก็มารู้จักกันหน่อยไหม —",
         "content": "https://raw.githubusercontent.com/NuttapolKhumdang/webblog-content/refs/heads/main/content/a-journey-diary.txt",
         "tags": [
-            "Diary"
+            "Diary",
+            "Introduce a Journey"
         ],
         "picture": "https://raw.githubusercontent.com/NuttapolKhumdang/webblog-content/refs/heads/main/media/backdrop/10001.webp",
         "created": 1746813174750,
