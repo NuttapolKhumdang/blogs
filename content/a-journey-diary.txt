@@ -28,7 +28,7 @@ h3; งานอดิเรก;
 ผมชอบที่จะถ่ายรูปท้องฟ้าอยู่บ่อยๆ และโพสลงใน [Instagram](https://www.instagram.com/_winthrr/) ส่วนตัวของผม คุณลองไปดูไหมล่ะ
 
 image;
-src; https://raw.githubusercontent.com/NuttapolKhumdang/webblog-content/refs/heads/main/media/picture/10001-0.webp
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/10001-0.webp
 alt; เสาไฟถนนบนท้องฟ้าสดใส
 source; www.instagram.com/_winthrr
 author; _winthrr
