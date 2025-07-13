@@ -10,5 +10,17 @@
         "picture": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/backdrop/10001.webp",
         "created": 1746813174750,
         "updated": 1746813174750
+    },
+    {
+        "id": 10002,
+        "title": "Start Programing with C",
+        "descriptions": "ในปี 2025 ทีมีภาษาโปรแกรมมากมายที่มีความสามารถเทียบเท่าหรือดีกว่าภาษา C ได้ แล้วทำไมเรายังควรต้องศึกษากันอยู่อีกล่ะ?",
+        "content": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/content/start-programing-with-c.txt",
+        "tags": [
+            "C Programing"
+        ],
+        "picture": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/backdrop/10002.webp",
+        "created": 1752418002116,
+        "updated": 1752418002116
     }
 ]
