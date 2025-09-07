@@ -1,5 +1,17 @@
 [
     {
+        "id": 10003,
+        "title": "Algorithm for Programming",
+        "descriptions": "ก่อนเริ่มต้นการเขียนโปรแกรมซักภาษา เราต้องมีความเข้าใจในการแก้ไขปัญหาซ่ะก่อน ถึงจะสามารถเข้าใจการทำงานของคอมพิวเตอร์ได้",
+        "content": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/content/algorithm:algorithm-for-programming.txt",
+        "tags": [
+            "Algorithm"
+        ],
+        "picture": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/backdrop/10003.webp",
+        "created": 1757233751772,
+        "updated": 1757262952839
+    },
+    {
         "id": 10002,
         "title": "Start Programing with C",
         "descriptions": "ในปี 2025 ทีมีภาษาโปรแกรมมากมายที่มีความสามารถเทียบเท่าหรือดีกว่าภาษา C ได้ แล้วทำไมเรายังควรต้องศึกษากันอยู่อีกล่ะ?",

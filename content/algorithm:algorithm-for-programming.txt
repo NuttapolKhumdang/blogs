@@ -1,0 +1,139 @@
+//; 
+
+Id: 10003
+Filename: algorithm:algorithm-for-programming.txt
+Backdrop: media/backdrop/10003.webp
+Title: Algorithm for Programming
+Descriptions: ก่อนเริ่มต้นการเขียนโปรแกรมซักภาษา เราต้องมีความเข้าใจในการแก้ไขปัญหาซ่ะก่อน ถึงจะสามารถเข้าใจการทำงานของคอมพิวเตอร์ได้
+Tag: Algorithm
+Create Date: 2025-09-07
+
+//;
+
+h1; Algorithm?
+
+;;; https://www.enablerspace.com/th/digitalmarketingtips/what-is-an-algorithm/
+**Algorithm** คือ ลำดับขั้นตอนการแก้ปัญหาหรือการคำนวณที่กำหนดไว้อย่างชัดเจน โดยมีหลักการทำงานเป็นระบบ เริ่มจากข้อมูลเข้า ผ่านกระบวนการประมวลผลตามตรรกะและเงื่อนไขต่างๆ จนได้ผลลัพธ์ที่ต้องการ
+
+โดยองค์ประกอบของอัลกอริทึม มีอยู่ 3 อย่างคือ
+
+list; o
+**ข้อมูลนำเข้า (Input)** คือ ข้อมูลเริ่มต้นที่อัลกอริทึมใช้ประมวลผล อาจเป็นค่าเดียวหรือข้อมูลที่ซับซ้อน
+**กระบวนการทำงาน (Process)** คือ ส่วนหลักที่อัลกอริทึมดำเนินการตามชุดคำสั่งที่กำหนดไว้ โดยใช้การคำนวณทางตรรกะและคณิตศาสตร์
+**ผลลัพธ์ (Output)** คือ ข้อมูลที่ได้หลังจากกระบวนการประมวลผลเสร็จสิ้น
+/list;
+
+h2; Problem Analysis
+
+ในการออกแบบโปรแกรมคอมพิวเตอร์ เราต้องการออกแบบเครื่องมือสำหรับการแก้ปัญหาบางอย่าง เช่น การคำนวนภาษีอากร ซึ่งเราต้องวิเคราะห์ปัญหาที่เราต้องการแก้ไขว่า ผลลัพธ์ที่ต้องการเป็นอย่างไร ต้องมีข้อมูลใดบ้าง และมีขั้นตอนการทำงานอย่างไร
+
+h3; ตัวอย่างการสร้างตาราง Input, Process และ Output
+
+**โจทย์**: สร้างโปรแกรมคำนวนหาภาษีอากร ซึ่งคิดเป็น 7% ของรายได้สุทธิ
+
+table; ตัวอย่าง Input, Process และ Output ของการคำนวนภาษีอากร
+Input | Process | Output
+- จำนวนรายได้สุทธิ | - รับค่าจำนวนรายได้สุทธิ \n- คำนวนหาจำนวนภาษีอากร (7% จากรายได้สุทธิ) \n- แสดงผลจำนวนภาษีอากร | - จำนวนภาษีอากร
+/table;
+
+**โจทย์**: จงหาพื้นที่ของสี่เหลี่ยมผืนผ้าจากความกว้างและความยาวของสี่เหลี่ยมผืนผ้า
+
+table; ตัวอย่าง Input, Process และ Output ของการหาพื้นที่สี่เหลียมผืนผ้า
+Input | Process | Output
+- ขนาดความกว้างของสี่เหลี่ยมผืนผ้า \n - ขนาดความยาวของสี่เหลี่ยมผืนผ้า | - รับค่าขนาดความกว้างของสี่เหลี่ยมผืนผ้า \n- รับค่าขนาดความยาวของสี่เหลี่ยมผืนผ้า \n- คำนวนหาพื้นที่ของสี่เหลี่ยมผืนผ้า \n- แสดงผลพื้นที่ของสี่เหลี่ยมผืนผ้า | - พื้นที่สี่เหลียมผืนผ้า
+/table;
+
+จากตัวอย่างข้างต้นเป็นการระบุวิธีการทำงานอย่างคร่าว ๆ เท่านั้น ในการออกแบบสำหรับการทำงานของโปรแกรม เราจะระบุวิธีการคำนวน สมการ และค่าที่เกี่ยวข้องไว้เสมอ รวมถึงกำหนดตัวแปนสำหรับ Input และ Output เอาไว้ร่วมด้วย จากตัวอย่างข้างต้น
+
+table; ตัวอย่าง Input, Process และ Output ของการหาพื้นที่สี่เหลียมผืนผ้าแบบละเอียด
+Input | Process | Output
+- ขนาดความกว้างของสี่เหลี่ยมผืนผ้า (width) \n- ขนาดความยาวของสี่เหลี่ยมผืนผ้า (length) | - รับค่าขนาดความกว้างของสี่เหลี่ยมผืนผ้า (width) \n- รับค่าขนาดความยาวของสี่เหลี่ยมผืนผ้า (length) \n- คำนวนหาพื้นที่ของสี่เหลี่ยมผืนผ้า (area = width * length) \n- แสดงผลพื้นที่ของสี่เหลี่ยมผืนผ้า (area) | - พื้นที่สี่เหลียมผืนผ้า (area)
+/table;
+
+
+h1; Algorithm Presentation
+
+วิธีการที่ใช้ในการออกแบบและนำเสนออัลกอริทึมที่นิยมใช้มีอยู่ 2 รูปแบบ คือ **ผังงาน (Flowchart)** และ **รหัสเทียม (Pesudo Code)**
+
+h2; Flowchart
+
+;;; https://dsa.su.ac.th/ksu/wp-content/uploads/2022/03/เกร็ดความรู้เครื่องมือการทำงาน.pdf
+
+ผังงาน (Flowchart) เป็นการเขียนรูปภาพลำดับขั้นตอนการทำงาน โดยมีสัญลักษณ์ประกอบเพื่อให้ง่ายต่อการเข้าใจ
+
+//;
+
+image;
+src; https://upload.wikimedia.org/wikipedia/commons/4/44/LampFlowchart.png
+source; commons.wikimedia.org/wiki/File:LampFlowchart.png
+alt; A simple flowchart for troubleshooting a broken lamp.
+author; Ilkant
+/image;
+
+//;
+
+h2; สัญลักษณ์เบื้องต้น
+
+table; ตารางแสดงชื่อ และความหมายของสัญลักษญ์ที่ใช้ในการเขียนผังงาน (อ้างอิงและสัญลักษณ์จาก [Wikipedia: Flowchart](https://en.wikipedia.org/wiki/Flowchart))
+สัญลักษณ์ | ชื่อ | หน้าที่
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/120px-Flowchart_Line.svg.png"  />                               | เส้นแสดงทิศทาง (Flowline)                    | ใช้ในการแสดงทิศทางของข้อมูล
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/120px-Flowchart_Terminal.svg.png"  />                       | เริ่ม / หยุด (Terminal)                       | แสดงจุดเริ่มต้นและสิ้นสุดของการทำงาน
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/120px-Flowchart_Process.svg.png"  />                         | การประมวลผล (Process)                      | แสดงการคำนวน การประมวลผลข้อมูล
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/120px-Flowchart_Decision.svg.png"  />                       | การตัดสินใจ (Decision)                       | แสดงการตัดสินใจในการเลือกเส้นทางระหว่างสองเส้นทาง โดยใช้คำถามที่ให้คำตอบเป็นใช่ หรือ ไม่ใช่ หรือใช้ประพจน์ทางตรรกะศาสตร์ที่ให้ค่าความจริงว่าเป็นจริง หรือเท็จ
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/120px-Flowchart_IO.svg.png"  />                                   | การนำเข้า / แสดงผล ข้อมูล (Input/Output)      | แสดงการนำเข้า หรือแสดงผลข้อมูล
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/120px-Flowchart_Predefined_Process.svg.png"  />   | การทำงานที่กำหนดไว้แล้ว (Predefined Process)   | แสดงชื่อของการทำงานที่กำหนดไว้แล้ว
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/60px-Flowchart_Connector.svg.png"  />                      | จุดเชื่อมต่อ (On-Page Connector)               | แสดงการเชื่อมต่อของเส้นแสดงทิศทางบนหน้าเดียวกัน
+<img class="bg-white"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Off_page_connector.png/60px-Off_page_connector.png"  />                            | จุดเชื่อมต่อระหว่างหน้า (Off-Page Connector)     | แสดงการเชื่อมต่อระหว่างหน้า
+/table;
+
+h3; ตัวอย่างผังงานของการหาพื้นที่สี่เหลียมผืนผ้า
+
+image;
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/10003-0.svg
+source; draw.io
+alt; ผังงานของการหาพื้นที่สี่เหลียมผืนผ้า
+author; Nuttapol Khumdang
+/image;
+
+
+h2; Pesudo Code
+
+**รหัสเทียม** คือรูปแบบของคำสั่งทั่วไปที่ใช้ในการแสดงลำดับการทำงานของอัลกอริทึม โดยใช้คำภาษาอังกฤษ ซึ่งมีความชัดเจน สั้น กระชับ เข้าใจง่าย
+
+โดยรหัสเทียมจะมีคำสั่งพื้นฐาน เช่น
+
+list; u
+**`start`, `stop`**: เพื่อบอกจุดเริ่มต้นและจุดสิ้นสุดการทำงานของโปรแกรม     
+**`read`**: เพื่อแสดงการรับเข้าของข้อมูล     
+**`print`**: เพื่อแสดงการแสดงผลข้อมูล
+**`if`, `else`, `end`**: เพื่อแสดงการตัดสินใจ
+**`while`, `end`**: เพื่อแสดงการวนซ้ำโดยตรวจสอบเงื่อนไขก่อน
+**`do`, `while`**: เพื่อแสดงการวนซ้ำโดยตรวจสอบเงื่อนไขภายหลัง
+**`for`, `end`**: เพื่อแสดงการวนซ้ำตามจำนวนรอบ
+/list;
+
+h3; ตัวอย่างรหัสเทียมของการหาพื้นที่สี่เหลียมผืนผ้า
+
+code; Plaintext; Peusudo Code
+start
+    read width, length
+    area = width * length
+    print area
+stop
+/code;
+
+h1; สวัสดี
+
+Algorithm เป็นหัวใจสำคัญในการทำงานด้านโปรแกรมคอมพิวเตอร์ ดังนั้นการเข้าใจวิธีแก้ปัญหาอย่างเป็นระบบและมีขั้นตอนจึงสามารถช่วยให้เข้าใจการทำงานของโปรแกรมง่ายขึ้นอย่างมาก
+บทความนี้ได้รับแรงบันดาลใจจากสิ่งที่ผมได้เรียนมาภายในมหาวิทยาลัย และเนื้อหาเพิ่มเติมอีกมากมายจากอินเตอร์เน็ต โดยเป็นการสรุปและเรียบเรียงด้วยตัวผมใหม่ หากมีข้อผิดพลาดประการใดก็ขอภัยไว้ ณ ที่นี้
+หรือหากมีข้อเสนอแนะหรือคำถามใด ๆ สามารถติดต่อได้ที่ [Instagram](https://www.instagram.com/_winthrr) หรือ [nuttapolkhumdang@gmail.com](mailto:nuttapolkhumdang@gmail.com)
+
+h2; อ้างอิง
+
+list; u
+[Enablerspace.com: อัลกอริทึม (Algorithm) คืออะไร?](https://www.enablerspace.com/th/digitalmarketingtips/what-is-an-algorithm/). March 18, 2019
+[Silpakorn University: เกร็ดความรู้เครื่องมือการทำงาน](https://dsa.su.ac.th/ksu/wp-content/uploads/2022/03/เกร็ดความรู้เครื่องมือการทำงาน.pdf). March 22, 2022
+[Wikipedia: Flowchart](https://en.wikipedia.org/wiki/Flowchart). July 22, 2025
+Mahasarakham University (Faculty of Informatics): Problem Solving For Computer Science - IPO.pdf. July 18, 2019
+;;; https://lecture.nuttapolkhumdang.work/1204103/slide/ProblemSolving-Slide1-IPO.pdf
+/list;
