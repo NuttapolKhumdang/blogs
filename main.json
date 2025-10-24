@@ -1,5 +1,19 @@
 [
     {
+        "id": 10004,
+        "title": "Setup USB Connection on Raspberry Pi Zero 2 W",
+        "descriptions": "Setup USB Network Interface on Raspberry Pi Zero 2 W for SSH Connection. // Guide to setup USB network interface for SSH connection to Raspberry Pi Zero 2 W",
+        "content": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/content/guide:setup-raspi-network-interface-using-usb.txt",
+        "tags": [
+            "Guide",
+            "Raspberry Pi",
+            "Linux"
+        ],
+        "picture": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/backdrop/10004.webp",
+        "created": 1761308510517,
+        "updated": 1761308510517
+    },
+    {
         "id": 10003,
         "title": "Algorithm for Programming",
         "descriptions": "ก่อนเริ่มต้นการเขียนโปรแกรมซักภาษา เราต้องมีความเข้าใจในการแก้ไขปัญหาซ่ะก่อน ถึงจะสามารถเข้าใจการทำงานของคอมพิวเตอร์ได้",

@@ -1,0 +1,148 @@
+h1; Why?
+
+Why do I need to setup network interface on usb to connection to Raspberry Pi?
+
+In my case: I have Wi-Fi connection on my enviroment but It very slow and not reliable to do anything, Also it have not enough bandwidth to use SSH. So I design to connect my Laptop to Raspberry Pi directly using USB internet
+
+After Googling and Gemini, I have my set-up my own connection alreay and this is how I do.
+
+*Before going: I am sure that you are have a little familiar with linux*
+
+h2; Before booting into Raspberry Pi
+
+Enable the USB Gadget Overlay on Raspberry Pi by config a boot setting
+
+list; u
+After writing Image file into SD Card, mount it back to computer.
+Then go to `bootfs` partition on SD card and find `config.txt`
+Open it using any text-editor you have
+/list;
+
+
+// Add the following line to the end of the file, After `[all]` section in the file:
+
+In the `config.txt` you will see `[cm4]`, `[cm5]` and `[all]` section. you have to remove or comment it out and add `dtoverlay=dwc2` after `[all]` section
+Then you `config.txt` will look like this:
+
+code; Ini; config.txt
+[cm4]
+# Enable host mode on the 2711 built-in XHCI USB controller.
+# This line should be removed if the legacy DWC2 controller is required
+# (e.g. for USB device mode) or if USB support is not required.
+#otg_mode=1                     # Disable this
+ 
+[cm5]
+#dtoverlay=dwc2,dr_mode=host    # Disable this
+ 
+[all]
+dtoverlay=dwc2
+/code;
+
+p; And in `cmdline.txt` add `modules-load=dwc2,g_ether` after `rootwait` without create any new line **Everything must be on a signle-line**
+
+code; Plaintext; cmdline.txt
+console=serial0,115200 console=tty1 root=PARTUUID=c459cd3b-02 rootfstype=ext4 fsck.repair=yes rootwait modules-load=dwc2,g_ether cfg80211.ieee80211_regdom=TH
+/code;
+
+h2; After boot-up your Raspberry Pi
+
+note/info; You need a Wi-Fi to connect into Raspberry Pi for this following step
+
+h3; 1. SSH into your Raspberry Pi using Wi-Fi
+
+code; Bash; Terminal
+ssh raspberrypi.local # Or your hostname
+/code;
+
+h3; 2. Plug USB cable into Raspberry Pi and your computer
+
+h3; 3. Check if USB are connect 
+By using `ip address`, It will show you all of network you have like this with more information
+
+code; Bash; Terminal
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+2: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+/code;
+
+
+that you should find `usb0` appear
+
+h3; 4. Config The IP
+
+Using `nmtui`, you can easy config the network
+
+list; o
+`sudo nmtui`, to open **NetworkManager TUI**
+Go to **Edit a connection** > **Add** > **Ethernet**
+Set `Profile name` to **usb0** or whatever you want
+Set `Device` to **usb0**
+Then, Go to `IPv4 CONFIGURATION` and Change **Automatic** to **Manual**
+And **Show** `IPv4 CONFIGURATION` It will show lot of configuration
+Go to `Address` and **Add** IP Address that you want to use to connect, `exmaple: 192.168.7.2`
+At `Gateway` box, set it to `255.255.255.0`
+You can select `Never use this network for default route` to not use this interface for normal network connection
+/list;
+
+Select **OK** and back to `NetworkManager TUI`, go to **Activate a connection**, Then **Deactivate** and **Activate** it again
+
+h2; On Your Computer Side
+
+h3; 1. Check Device Id
+
+Open your terminal and type `ip address` you should see interface without an IP address
+
+code; Plaintext; Terminal
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+8: enxa667ccde4213: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether a6:67:cc:de:42:13 brd ff:ff:ff:ff:ff:ff
+/code;
+
+
+In my case there are `enxa667ccde4213`, so you just copy that name
+
+h3; 2. Setup Interface
+
+Go to **NetworkManager TUI** by type `nmtui`
+
+Then, go to **Edit a connection** > **Add** > **Ethernet**
+
+And enter **Profile name**, In **Device** section you just paste text that you alreay copy it
+
+Then again, go to **IPv4 CONFIGURATION** and set it to **Manual** and Add IP Address to it `exmaple: 192.168.7.1`, and Gateway to `255.255.255.0`
+
+Ok and connect to network by go to **Activate a connection** and Activate your **Profile name**
+
+h2; And let's get in to it!
+
+By follow these step, you will get Raspberry Pi at `192.168.7.2` and you are `192.168.7.1`, So you can SSH into raspberry pi by using `ssh 192.168.7.2`
+
+h3; Boom!
+
+code; Plaintext; Terminal
+Linux raspberrypi 6.12.47+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.12.47-1+rpt1 (2025-09-16) aarch64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Oct 24 18:53:30 2025 from 192.168.7.1
+<username>@raspberrypi:~ $ 
+/code;
+
+you are loggin to Raspberry Pi using USB cable.
+
+
+h2; Just keep it as my Journey
+
+I have to google it twice just to do the samething, So I just keep it here to not googling this again
+As I intended, if it would be helpful to you who have wandered in, I would be very glad.
+
+I apologize for home home English.
