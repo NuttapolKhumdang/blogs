@@ -1,0 +1,116 @@
+h1; และนี่คือออ... Portfolio ของเราเอง
+
+h2; ปกหน้า
+
+image; 
+src; /contents/media/picture/msu-portfolios/1.png
+/image;
+
+h2; คำนำ
+image; 
+src; /contents/media/picture/msu-portfolios/3.png
+/image;
+
+h2; ประวัติส่วนตัว
+image; 
+src; /contents/media/picture/msu-portfolios/4.png
+/image;
+
+h2; ประวัติการศึกษา
+image; 
+src; /contents/media/picture/msu-portfolios/5.png
+/image;
+
+h2; ผลงาน
+image; 
+src; /contents/media/picture/msu-portfolios/6.png
+/image;
+
+image; 
+src; /contents/media/picture/msu-portfolios/7.png
+/image;
+
+image; 
+src; /contents/media/picture/msu-portfolios/8.png
+/image;
+
+h2; รางวัล
+image; 
+src; /contents/media/picture/msu-portfolios/9.png
+/image;
+
+h2; ประกาศนียบัตร
+image; 
+src; /contents/media/picture/msu-portfolios/10.png
+/image;
+
+h2; กิจกรรม
+image; 
+src; /contents/media/picture/msu-portfolios/11.png
+/image;
+
+image; 
+src; /contents/media/picture/msu-portfolios/12.png
+/image;
+
+h2; ปกหลัง
+image; 
+src; /contents/media/picture/msu-portfolios/13.png
+/image;
+
+h1; ผลเป็นยังไง
+
+เรายื่น**สาขาวิทยาการคอมพิวเตอร์**ทั้งหมด 3 ที่คือ
+
+h3; มหาวิทยาลัยขอนแก่น
+
+**1. โครงการทุนช้างเผือก**
+list; none
+    &check; ผ่านการคัดเลือก มีสิทธิ์สอบสัมภาษณ์
+    &Cross; ไม่ผ่านการสอบข้อเขียน
+/list;
+
+**2. โครงการทุนผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ**
+list; none 
+    &check; ผ่านการคัดเลือก มีสิทธิ์สอบสัมภาษณ์
+    &Cross; ไม่ผ่านการสอบสัมภาษณ์
+/list;
+
+**3. โครงการผู้มีศักยภาพด้านคอมพิวเตอร์**
+list; none 
+    &Cross; ไม่ผ่านการคัดเลือก
+/list;
+
+h3; มหาวิทยาลัยมหาสารคาม
+
+**1. โควตาเด็กดีมีที่เรียน และโควตาครูแนะแนว**
+list; none 
+    &Cross; ไม่ผ่านเกณฑ์ *หน่วยกิตรายวิชาการงานอาชีพไม่ถึงเกณฑ์*
+/list;
+
+**2. โควตารับตรง Portfolio**
+list; none 
+    &check; ผ่านการคัดเลือก
+    &check; ผ่านการสอบสัมภาษณ์
+    &check; **ยืนยันสิทธิ์**
+/list;
+
+h3; มหาวิทยาลัยแม่โจ้
+
+**โครงการ TCAS รอบที่ 1.2 Portfolio**
+list; none 
+    &check; ผ่านการคัดเลือก ไม่มีการสัมภาษณ์
+    &Cross; ไม่ยืนยันสิทธิ์
+/list;
+
+h1; เบื้องหลังของการออกแบบ
+
+ครั้งแรกที่ออกแบบ Portfolio เราได้ออกแบบให้เข้ากับเกณฑ์ของมหาวิทยาลัยขอนแก่น โดยข้อกำหนดจำนวนหน้าคือ 10 หน้า ไม่รวมหน้าปก และเราก็ได้ปรับรูปแบบและสีสันให้เป็นของมหาวิยาลัยมหาสารคาม เพื่อจะยื่นในรอบนี้เช่นกัน
+
+ปรัชญาการออกแบบของเราคือ Minimalism การคงเอกลักษณ์ที่มีองประกอบไม่มาก อ่านง่าย สบายตา โล่ง ๆ โปร่ง ๆ ใส ๆ ไม่ใส่อะไรที่ไม่จำเป็น มันจึงออกมาเป็นสีโทนสีขาว ตกแต่งด้วยสีหลักของมหาวิทยาลัยเพื่อสื่อถึงความเป็นเอกลักษณ์
+
+ด้านเนื้อหา ส่วนใหญ่ก็เป็นการอธิบายผลงานและกิจกรรมที่เราได้ทำมา โดยเขียนเล่าเรื่องราวและประสบการณ์ของเราที่ได้พบเจอและลงมือทำตรงนั้น
+
+h1; สวัสดี
+
+ถ้าหากข้อมูลในบทความนี้เป็นประโยชน์ก็ยินดีอย่างยิ่งที่ได้แบ่งปัน
