@@ -6,7 +6,7 @@ In my case: I have Wi-Fi connection on my enviroment but It very slow and not re
 
 After Googling and Gemini, I have my set-up my own connection alreay and this is how I do.
 
-*Before going: I am sure that you are have a little familiar with linux*
+note/warn/mid; Before going: I am sure that you are have a little familiar with linux
 
 h2; Before booting into Raspberry Pi
 
@@ -56,7 +56,8 @@ ssh raspberrypi.local # Or your hostname
 
 h3; 2. Plug USB cable into Raspberry Pi and your computer
 
-h3; 3. Check if USB are connect 
+h3; 3. Check if USB are connected
+
 By using `ip address`, It will show you all of network you have like this with more information
 
 code; Bash; Terminal
@@ -145,4 +146,4 @@ h2; Just keep it as my Journey
 I have to google it twice just to do the samething, So I just keep it here to not googling this again
 As I intended, if it would be helpful to you who have wandered in, I would be very glad.
 
-I apologize for home home English.
+I apologize for my home home English.
