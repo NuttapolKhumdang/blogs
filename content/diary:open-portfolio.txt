@@ -3,59 +3,59 @@ h1; และนี่คือออ... Portfolio ของเราเอง
 h2; ปกหน้า
 
 image; 
-src; /contents/media/picture/msu-portfolios/1.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/1.png
 /image;
 
 h2; คำนำ
 image; 
-src; /contents/media/picture/msu-portfolios/3.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/3.png
 /image;
 
 h2; ประวัติส่วนตัว
 image; 
-src; /contents/media/picture/msu-portfolios/4.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/4.png
 /image;
 
 h2; ประวัติการศึกษา
 image; 
-src; /contents/media/picture/msu-portfolios/5.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/5.png
 /image;
 
 h2; ผลงาน
 image; 
-src; /contents/media/picture/msu-portfolios/6.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/6.png
 /image;
 
 image; 
-src; /contents/media/picture/msu-portfolios/7.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/7.png
 /image;
 
 image; 
-src; /contents/media/picture/msu-portfolios/8.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/8.png
 /image;
 
 h2; รางวัล
 image; 
-src; /contents/media/picture/msu-portfolios/9.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/9.png
 /image;
 
 h2; ประกาศนียบัตร
 image; 
-src; /contents/media/picture/msu-portfolios/10.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/10.png
 /image;
 
 h2; กิจกรรม
 image; 
-src; /contents/media/picture/msu-portfolios/11.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/11.png
 /image;
 
 image; 
-src; /contents/media/picture/msu-portfolios/12.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/12.png
 /image;
 
 h2; ปกหลัง
 image; 
-src; /contents/media/picture/msu-portfolios/13.png
+src; https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/media/picture/msu-portfolios/13.png
 /image;
 
 h1; ผลเป็นยังไง
