@@ -2,7 +2,7 @@
     {
         "id": 10004,
         "title": "Setup USB Connection on Raspberry Pi",
-        "descriptions": "Setup USB Network Interface on Raspberry Pi Zero 2 W for SSH Connection. // Guide to setup USB network interface for SSH connection to Raspberry Pi Zero 2 W",
+        "descriptions": "Setup USB Network Interface on Raspberry Pi Zero 2 W for SSH connection using USB cable",
         "content": "https://raw.githubusercontent.com/NuttapolKhumdang/blogs/refs/heads/main/content/guide:setup-raspi-network-interface-using-usb.txt",
         "tags": [
             "Guide",
